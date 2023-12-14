@@ -8,6 +8,6 @@ export class User {
   @Field()
   name: string;
 
-  @Field({ nullable: true })
+  @Field({ nullable: true, defaultValue: false })
   isActive?: boolean;
 }
